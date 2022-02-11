@@ -1,25 +1,26 @@
-document.getElementById("deposit-button").addEventListener("click", function () {
-    const depositInput = document.getElementById("deposit-input");
+document.getElementById('deposit-button').addEventListener('click', function () {
+    // get the amount deposited
+    const depositInput = document.getElementById('deposit-input');
     const newDepositAmountText = depositInput.value;
     const newDepositAmount = parseFloat(newDepositAmountText);
 
-    const depositTotal = document.getElementById("deposit-total");
-    const previousaDepositText = depositTotal.innerText;
-    const previousDepositAmmount = parseFloat(previousaDepositText);
-    const newDepositTotal = newDepositAmount + previousDepositAmmount;
-    depositTotal.innerText = newDepositTotal;
-    depositInput.value = "";
+    // update deposit total
+    const depositTotal = document.getElementById('deposit-total');
+    const previousDepositText = depositTotal.innerText;
+    const previousDepositAmount = parseFloat(previousDepositText);
+    const newDepositTotal = previousDepositAmount + newDepositAmount;
 
-    const balanceTotal = document.getElementById("balance-total");
+    depositTotal.innerText = newDepositTotal;
+
+    // update account balance 
+    const balanceTotal = document.getElementById('balance-total');
     const balanceTotalText = balanceTotal.innerText;
-    let previousBalanceTotal = parseFloat(balanceTotalText);
-    console.log(previousBalanceTotal);
+    const previousBalanceTotal = parseFloat(balanceTotalText);
     const newBalanceTotal = previousBalanceTotal + newDepositAmount;
     balanceTotal.innerText = newBalanceTotal;
-    depositInput.value = "";
-
-
-})
+    // clear the deposit input field
+    depositInput.value = '';
+});
 
 document.getElementById('Withdraw-button').addEventListener('click', function () {
     const withdrawInput = document.getElementById('withdraw-input');
