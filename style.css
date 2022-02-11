@@ -1,0 +1,7 @@
+button
+{
+    align-items: center !important;
+    text-align: center !important;
+    margin: auto;
+    display: flex;
+}

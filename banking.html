@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 class="text-5xl text-center mt-16">Let's get some <span class="font-semibold	text-orange-600">Moooney</span>!!!
+    </h1>
+    <div class="grid grid-col-3 mx-auto">
+        <div class="flex ">
+            <div
+                class="flex-1 ml-20 mr-5 mt-8 bg-lime-600 pt-1 rounded-lg text-white content-center font-bold pt-5 pl-5 pr-5 pb-20 text-4xl">
+                <h1>Deposit</h1>
+                <h3>$ <span id="deposit-total">00</span></h3>
+            </div>
+            <div
+                class="flex-1 ml-5 mr-5 mt-8 bg-teal-300 pt-1 rounded-lg text-white content-center font-bold pt-5 pl-5 pr-5 pb-20 text-4xl">
+                <h1>Withdraw</h1>
+                <h3>$ <span id="withdraw-total">00</span></h3>
+            </div>
+            <div
+                class="flex-1 ml-5 mr-20 mt-8 bg-rose-400 pt-1 rounded-lg text-white content-center font-bold pt-5 pl-5 pr-5 pb-20 text-4xl">
+                <h1>Balance</h1>
+                <h3>$ <span id="balance-total">1200</span></h3>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="grid grid-cols-2 gap-4 mb-10">
+        <div>
+            <section class="mx-auto mt-8 bg-lime-500 pt-1 rounded-lg ml-20  " style="width: 600px; height: 300px;">
+                <h3 class="text-5xl text-center mt-8 semi-bold">Please Deposit</h3>
+                <div>
+                    <input class="mx-auto block mt-8 rounded-lg border-2" style="width: 500px; height: 50px;"
+                        type="text" name="" id="deposit-input">
+
+                    <button id="deposit-button"
+                        class=" text-white font-bold text-4xl pl-3 pt-2 pr-3 pb-3  mt-8 ml-20  bg-orange-600 semi- rounded-lg">Submit</button>
+                </div>
+            </section>
+        </div>
+
+        <div>
+            <section class="mx-auto mt-8 bg-indigo-800 pt-1 rounded-lg mr-10 " style="width: 600px; height: 300px;">
+                <h3 class="text-5xl text-center mt-8 semi-bold">Please Withdraw</h3>
+                <div>
+                    <input class="mx-auto block mt-8 rounded-lg border-2" style="width: 500px; height: 50px;"
+                        type="text" name="" id="withdraw-input">
+
+                    <button id="Withdraw-button"
+                        class=" text-white font-bold text-4xl pl-3 pt-2 pr-3 pb-3  mt-8 ml-20  bg-rose-700 semi- rounded-lg">Submit</button>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <script src="bank.js"></script>
+
+
+</body>
+
+</html>
